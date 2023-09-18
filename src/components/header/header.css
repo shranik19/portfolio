@@ -1,0 +1,124 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  font-size: larger;
+}
+.header__container > h5 {
+  padding: 1rem;
+}
+
+/* ====cta btn===========? */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.cta a:hover {
+  transform: translateY(-10px);
+}
+/* ========header socials===== */
+.header__Socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+}
+
+.header__Socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: var(--color-primary);
+}
+.header__Socials a:hover {
+  transform: translateY(-5px);
+}
+/* ========image============ */
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  margin: 0 auto;
+  width: 22.5rem;
+  height: 21.4rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 9.5rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 1rem 1rem rem 1rem;
+}
+.hello {
+  width: 50px;
+  position: relative;
+  left: 5rem;
+  bottom: 15.5rem;
+  display: none;
+}
+.me:hover .hello {
+  display: block;
+}
+/* ===========scroll down========= */
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 6.5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* ====media query for medium devices==== */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 80vh;
+  }
+}
+
+/* ====media query for small devices==== */
+@media screen and (max-width: 750px) {
+  header {
+    height: 100vh;
+    padding: 2rem 0 0 0;
+  }
+
+  .header__container {
+    font-size: small;
+  }
+  .header__container > h5 {
+    padding: 1rem;
+  }
+  .header__container > h1 {
+    font-size: 2rem;
+  }
+
+  .me {
+    width: 20rem;
+    margin-top: 6.5rem;
+    height: 18.5rem;
+  }
+  .header__Socials {
+    flex-direction: row;
+    left: 2rem;
+  }
+  .scroll__down {
+    transform: rotate(360deg);
+    bottom: 4.3rem;
+    right: 5rem;
+  }
+}
+@media screen and (max-height: 750px) {
+  .header__Socials,
+  .scroll__down {
+    display: none;
+  }
+}

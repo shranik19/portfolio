@@ -1,0 +1,100 @@
+#about {
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+.about__container h2 {
+  color: var(--color-primary);
+}
+.skills {
+  margin: 4rem;
+  font-size: larger;
+}
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.about__card {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.about__card:hover {
+  transform: translateY(-5px);
+}
+.about__icon {
+  color: var(--color-primary);
+  font-size: 3rem;
+  justify-content: left;
+}
+
+.about__card h5 {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+.about__content p {
+  text-align: left;
+  margin: 2rem 0 2.6rem;
+  color: var(--color-white);
+  position: relative;
+  font-size: 15px;
+}
+
+.about__container {
+  text-align: center;
+}
+
+.about__content a {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .about__card {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+  #about {
+    padding-top: 1.5rem;
+  }
+  .skills {
+    margin: 2rem;
+    font-size: large;
+  }
+  .about__content p {
+    font-size: 12px;
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+.cards {
+  animation-name: shrink;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
