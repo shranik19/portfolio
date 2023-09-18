@@ -105,6 +105,7 @@ header {
     width: 20rem;
     margin-top: 6.5rem;
     height: 18.5rem;
+    left: calc(50% - 10rem);
   }
   .header__Socials {
     flex-direction: row;
