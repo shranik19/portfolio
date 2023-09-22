@@ -19,7 +19,7 @@ const Header = () => {
           data-aos="fade-up-left"
           data-aos-duration="1500"
         >
-          Fullstack Developer
+          Web Developer
         </h5>
         <CTA />
         <HeaderSocial />

@@ -9,6 +9,8 @@ import { BiLogoNodejs } from "react-icons/bi";
 import { SiReact } from "react-icons/si";
 import { FaLaravel } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
 import AOS from "aos";
 
 const About = () => {
@@ -47,41 +49,39 @@ const About = () => {
             >
               <article className="about__card">
                 <SiHtml5 className="about__icon" />
-                <h5>HTML</h5>
               </article>
 
               <article className="about__card">
                 <SiCss3 className="about__icon" />
-                <h5>CSS</h5>
               </article>
 
               <article className="about__card">
                 <SiJavascript className="about__icon" />
-                <h5>Javascript</h5>
               </article>
 
               <article className="about__card">
                 <SiReact className="about__icon" />
-                <h5>React</h5>
               </article>
 
               <article className="about__card">
                 <BiLogoNodejs className="about__icon" />
-                <h5>Node Js</h5>
               </article>
 
               <article className="about__card">
                 <FaPhp className="about__icon" />
-                <h5>PHP</h5>
               </article>
 
               <article className="about__card">
                 <FaLaravel className="about__icon" />
-                <h5>Laravel</h5>
               </article>
               <article className="about__card">
                 <SiMysql className="about__icon" />
-                <h5>Mysql</h5>
+              </article>
+              <article className="about__card">
+                <BiLogoVisualStudio className="about__icon" />
+              </article>
+              <article className="about__card">
+                <BsGithub className="about__icon" />
               </article>
             </div>
           </div>
