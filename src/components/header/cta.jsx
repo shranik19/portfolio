@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "../../assets/cv.jpg";
+import cv from "../../assets/portcv.jpg";
 const cta = () => {
   return (
     <div className="cta">
