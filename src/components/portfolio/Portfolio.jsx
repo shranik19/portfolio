@@ -3,6 +3,7 @@ import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
+import IMG4 from "../../assets/portfolio4.png";
 
 const data = [
   {
@@ -29,6 +30,14 @@ const data = [
     description: "An e-commerce website (laravel)",
     github: "https://github.com/shranik19/e-commerce",
     demo: null,
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: "Hamro Jatra",
+    description: "A blog application built using NodeJs Mongodb and Express",
+    github: "https://github.com/shranik19/hamrojatra",
+    demo: "https://jatrablogs.onrender.com/blogs",
   },
 ];
 
